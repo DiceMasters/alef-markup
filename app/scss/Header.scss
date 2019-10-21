@@ -1,0 +1,11 @@
+nav.navbar {
+	a.navbar-brand {
+		font-size: 2rem;
+	}
+
+	.dropdown-menu.show {
+		position: absolute;
+		left: unset;
+		right: 0;
+	}
+}

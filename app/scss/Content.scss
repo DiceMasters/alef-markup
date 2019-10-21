@@ -1,0 +1,47 @@
+/**
+ * Главный контентый блок
+ */
+.content {
+	height: calc(100vh - 200px);
+	overflow-y: hidden;
+}
+
+/**
+ * Wrapper для контентной области
+ */
+.wrapper {
+	padding: 1rem;
+
+	p {
+		color: #3c3c3c;
+		line-height: 1.25rem;
+		margin-top: -0.313rem;
+	}
+}
+
+/**
+ * Блок для группирования параграфов
+ */
+.plain-text-group {
+	.wrapper {
+		background-color: #fff;
+		border-bottom: 4px solid #e6e6e6;
+
+		p { margin-bottom: 0; }
+
+		&:nth-child(even) { background-color: #f6f6f6; }
+	}
+}
+
+/**
+ * Nicescroll Trans[parent]
+ */
+
+.nicescroll-transparent {
+	height: 100%;
+}
+@media (max-width: 1024px) {
+	.nicescroll-transparent {
+		height: 50%;
+	}
+}

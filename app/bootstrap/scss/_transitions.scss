@@ -1,0 +1,40 @@
+.fade {
+  @include transition($transition-fade);
+
+  &:not(.show) {
+    opacity: 0;
+  }
+}
+
+.collapse {
+  transition: all .25s;
+  position: relative;
+
+  &:not(.show) {
+    width: 0%;
+    flex-basis: 0%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .collapse {
+    transition: all .25s;
+    position: relative;
+
+    &:not(.show) {
+      height: 0% !important;
+      width: 100%;
+      flex-basis: 100%;
+    }
+
+    &.show {
+      height: 50%;
+    }
+  }
+}
+
+.collapsing {
+  height: 0;
+  overflow: hidden;
+  @include transition($transition-collapse);
+}

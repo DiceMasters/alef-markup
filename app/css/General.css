@@ -1,0 +1,55 @@
+@charset "UTF-8";
+/**
+ * Главный контентый блок
+ */
+@import url(../fonts/Helvetica/stylesheet.css);
+.content {
+  height: calc(100vh - 200px);
+  overflow-y: hidden; }
+
+/**
+ * Wrapper для контентной области
+ */
+.wrapper {
+  padding: 1rem; }
+  .wrapper p {
+    color: #3c3c3c;
+    line-height: 1.25rem;
+    margin-top: -0.313rem; }
+
+/**
+ * Блок для группирования параграфов
+ */
+.plain-text-group .wrapper {
+  background-color: #fff;
+  border-bottom: 4px solid #e6e6e6; }
+  .plain-text-group .wrapper p {
+    margin-bottom: 0; }
+  .plain-text-group .wrapper:nth-child(even) {
+    background-color: #f6f6f6; }
+
+/**
+ * Nicescroll Trans[parent]
+ */
+.nicescroll-transparent {
+  height: 100%; }
+
+@media (max-width: 1024px) {
+  .nicescroll-transparent {
+    height: 50%; } }
+
+footer {
+  height: 100px; }
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #7000e0; }
+
+nav.navbar a.navbar-brand {
+  font-size: 2rem; }
+
+nav.navbar .dropdown-menu.show {
+  position: absolute;
+  left: unset;
+  right: 0; }
